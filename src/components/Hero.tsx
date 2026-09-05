@@ -6,11 +6,27 @@ export const Hero: React.FC = () => {
   const videoRef = React.useRef<HTMLVideoElement>(null);
 
   React.useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {
-        // Autoplay may be restricted until user interacts, but muted videos play automatically
-      });
-    }
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Explicitly set muted on DOM properties (required by Android Chrome / iOS Safari)
+    video.muted = true;
+    video.defaultMuted = true;
+
+    const startPlayback = () => {
+      video.play().catch(() => {});
+    };
+
+    startPlayback();
+
+    // Fallback: If low power mode or mobile browser delayed autoplay, start on first touch/scroll
+    window.addEventListener('touchstart', startPlayback, { once: true, passive: true });
+    window.addEventListener('scroll', startPlayback, { once: true, passive: true });
+
+    return () => {
+      window.removeEventListener('touchstart', startPlayback);
+      window.removeEventListener('scroll', startPlayback);
+    };
   }, []);
 
   return (
@@ -20,10 +36,12 @@ export const Hero: React.FC = () => {
         <video
           ref={videoRef}
           src="/hero.mp4"
+          poster="/hero-poster.webp"
           autoPlay
           muted
           loop
           playsInline
+          {...({ 'webkit-playsinline': 'true' } as any)}
           preload="auto"
           className="size-full object-cover"
         />
