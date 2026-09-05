@@ -98,7 +98,7 @@ export const Footer: React.FC = () => {
         {/* Bottom copyright line */}
         <Reveal delay={0.25}>
           <div className="mt-12 flex flex-col gap-2 text-[11px] text-white/60 md:flex-row md:justify-between">
-            <span>© 2026 Sunny Kumar · Founder, Sparclo Media</span>
+            <span>© 2026 Sunny Sah · Founder, Sparclo Media</span>
           </div>
         </Reveal>
       </div>

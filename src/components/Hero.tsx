@@ -42,7 +42,7 @@ export const Hero: React.FC = () => {
                 transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
                 className="block"
               >
-                Sunny Kumar.
+                Sunny Sah.
               </motion.span>
             </span>
             <span className="block overflow-hidden pb-[0.08em]">
