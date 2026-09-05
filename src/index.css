@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 0.625rem;
+  --court: oklch(62% 0.18 245);
+  --court-deep: oklch(42% 0.14 248);
+  --court-glow: oklch(78% 0.14 235);
+  --ink: oklch(14% 0.02 250);
+  --cream: #ffffff;
+  --background: #ffffff;
+  --foreground: oklch(14% 0.02 250);
+  --card: #ffffff;
+  --card-foreground: oklch(14% 0.02 250);
+  --popover: #ffffff;
+  --popover-foreground: oklch(14% 0.02 250);
+  --primary: oklch(14% 0.02 250);
+  --primary-foreground: #ffffff;
+  --secondary: oklch(95% 0.008 250);
+  --secondary-foreground: oklch(14% 0.02 250);
+  --muted: oklch(94% 0.008 250);
+  --muted-foreground: oklch(48% 0.02 250);
+  --accent: var(--court);
+  --accent-foreground: #ffffff;
+  --border: oklch(89% 0.01 250);
+  --input: oklch(89% 0.01 250);
+  --ring: var(--court);
+  --surface-2: oklch(95% 0.008 90);
+  --case-surface: oklch(98.5% 0.004 250);
+  --case-surface-soft: oklch(95.5% 0.014 245);
+  --case-border: oklch(89% 0.018 245);
+}
+
+.dark {
+  --background: oklch(14% 0.02 250);
+  --foreground: oklch(97% 0.012 90);
+  --card: oklch(18% 0.02 250);
+  --card-foreground: oklch(97% 0.012 90);
+  --popover: oklch(18% 0.02 250);
+  --popover-foreground: oklch(97% 0.012 90);
+  --primary: oklch(97% 0.012 90);
+  --primary-foreground: oklch(14% 0.02 250);
+  --secondary: oklch(22% 0.02 250);
+  --secondary-foreground: oklch(97% 0.012 90);
+  --muted: oklch(22% 0.02 250);
+  --muted-foreground: oklch(68% 0.02 250);
+  --accent: var(--court-glow);
+  --accent-foreground: oklch(14% 0.02 250);
+  --border: oklch(28% 0.02 250);
+  --input: oklch(28% 0.02 250);
+  --ring: var(--court-glow);
+  --surface-2: oklch(20% 0.02 250);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, 'Inter', sans-serif);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom Hide Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
