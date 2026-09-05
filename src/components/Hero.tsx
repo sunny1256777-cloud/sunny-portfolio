@@ -83,7 +83,7 @@ export const Hero: React.FC = () => {
             className="mt-8 flex max-w-xl flex-col items-start gap-6"
           >
             <p className="text-pretty text-base text-white/80 md:text-lg">
-              Incoming CSE (AI/ML) undergraduate at IIIT Manipur. Founder at Sparclo Media. Engineering multi-agent AI pipelines, WebGL 3D web experiences, and business automation platforms. Based in Surat, Gujarat.
+              Study in IIIT Manipur (CSE AI/ML). Founder at Sparclo Media. Engineering multi-agent AI pipelines, WebGL 3D web experiences, and business automation platforms. Based in Surat, Gujarat.
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">

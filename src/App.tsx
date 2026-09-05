@@ -70,7 +70,7 @@ export const App: React.FC = () => {
             <main className="relative">
               <Hero />
               <SelectedWork onSelectProject={handleSelectProject} />
-              <Labs />
+              <Labs onSelectProject={handleSelectProject} />
               <About />
             </main>
 

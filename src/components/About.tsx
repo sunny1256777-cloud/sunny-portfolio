@@ -5,7 +5,7 @@ import { ScrollColorText } from './ScrollColorText';
 
 export const About: React.FC = () => {
   const bioTags = [
-    { emoji: '📍', text: 'Surat, Gujarat ➔ IIIT Manipur' },
+    { emoji: '📍', text: 'Surat, Gujarat · Study in IIIT Manipur' },
     { emoji: '🚀', text: 'Founder @ Sparclo Media' },
     { emoji: '🏀', text: 'Basketball & fitness enthusiast' },
     { emoji: '🤖', text: 'Autonomous Multi-Agent Workflows' },
@@ -27,7 +27,7 @@ export const About: React.FC = () => {
           <div className="md:col-span-8">
             <Reveal>
               <ScrollColorText className="font-display text-3xl font-medium leading-snug tracking-[-0.01em] md:text-[40px]">
-                {"I'm **Sunny**, an AI developer and founder in **Surat**, heading to **IIIT Manipur**. Over the past years I've founded **Sparclo Media** and built real-world AI applications that automate business operations, client pipelines, and digital commerce. Right now I'm building **autonomous multi-agent systems**, the workflows that feel fast, reliable, and a little bit alive."}
+                {"I'm **Sunny**, an AI developer and founder in **Surat**, study in **IIIT Manipur**. Over the past years I've founded **Sparclo Media** and built real-world AI applications that automate business operations, client pipelines, and digital commerce. Right now I'm building **autonomous multi-agent systems**, the workflows that feel fast, reliable, and a little bit alive."}
               </ScrollColorText>
             </Reveal>
 

@@ -29,7 +29,7 @@ const apps: LabApp[] = [
     name: 'Employee Relationship (ERM)',
     description: 'Supervisor management dashboard for employee records, shift attendance, task distribution, and daily workflows.',
     category: 'Business Systems · 2025',
-    link: 'https://github.com/sunny1256777-cloud',
+    link: 'https://github.com/sunny1256777-cloud/kuldeep-erm-',
     icon: <Users className="size-6 text-emerald-400" />,
     color: 'from-emerald-600/30 to-teal-900/40',
     tag: 'Operational Efficiency',
@@ -39,7 +39,7 @@ const apps: LabApp[] = [
     name: 'River Charitable Foundation',
     description: 'Official web portal for an NGO championing child rights, primary education, nutrition, and emergency community aid.',
     category: 'Client Project, Web · 2025',
-    link: '#',
+    link: 'https://ai.studio/apps/0d1ef5cf-7b8f-481e-b2e9-2563b554b843?fullscreenApplet=true',
     icon: <Heart className="size-6 text-rose-400" />,
     color: 'from-rose-600/30 to-pink-900/40',
     tag: 'Accessible & Modern',
@@ -49,7 +49,7 @@ const apps: LabApp[] = [
     name: 'Consultancy Web Portal',
     description: 'High-converting business web presence featuring dynamic inquiry flows, service breakdowns, and lead capture.',
     category: 'Web Development · 2025',
-    link: '#',
+    link: 'https://github.com/sunny1256777-cloud/SIYA-CONSULTANCY-CRM',
     icon: <Briefcase className="size-6 text-amber-400" />,
     color: 'from-amber-600/30 to-orange-900/40',
     tag: 'Lead Generation',
@@ -69,14 +69,18 @@ const apps: LabApp[] = [
     name: 'Procedural WebGL Shaders',
     description: 'Real-time 3D interactive materials, fabric normal map manipulation, and 360° product inspection for luxury goods.',
     category: 'WebGL, 3D Graphics · 2025',
-    link: '#',
+    link: 'https://ai.studio/apps/4eee7fba-09bd-4e84-ac24-e17b51a3776e?fullscreenApplet=true',
     icon: <Boxes className="size-6 text-cyan-400" />,
     color: 'from-cyan-600/30 to-blue-900/40',
     tag: 'Interactive 360°',
   },
 ];
 
-export const Labs: React.FC = () => {
+interface LabsProps {
+  onSelectProject?: (id: string) => void;
+}
+
+export const Labs: React.FC<LabsProps> = ({ onSelectProject }) => {
   const [activeSlide, setActiveSlide] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
 
@@ -110,7 +114,7 @@ export const Labs: React.FC = () => {
 
           <Reveal delay={0.15}>
             <p className="max-w-sm text-pretty text-white/70">
-              Autonomous multi-agent pipelines, business backends, and full-stack utilities built to eliminate manual friction.
+              Autonomous multi-agent pipelines, business backends, and full-stack utilities built to eliminate manual friction. Tap any system to read the deep dive.
             </p>
           </Reveal>
         </div>
@@ -122,11 +126,17 @@ export const Labs: React.FC = () => {
         >
           {apps.map((app, idx) => (
             <Reveal key={app.id} delay={idx * 0.1}>
-              <a
-                href={app.link}
-                target={app.link.startsWith('http') ? '_blank' : '_self'}
-                rel="noopener noreferrer"
-                className="group block w-[75vw] max-w-[320px] shrink-0 snap-start md:w-auto md:max-w-none"
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={() => onSelectProject?.(app.id)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    onSelectProject?.(app.id);
+                  }
+                }}
+                className="group block w-[75vw] max-w-[320px] shrink-0 snap-start md:w-auto md:max-w-none cursor-pointer text-left select-none outline-none focus-visible:ring-2 focus-visible:ring-court-glow rounded-3xl"
               >
                 {/* Phone Mockup Frame */}
                 <div className="mx-auto w-full max-w-[260px] md:max-w-none">
@@ -158,6 +168,9 @@ export const Labs: React.FC = () => {
                           <div className="h-1.5 w-full bg-white/20 rounded-full overflow-hidden">
                             <div className="h-full w-3/4 bg-court-glow rounded-full" />
                           </div>
+                          <div className="pt-1 text-center font-mono text-[10px] text-white/60 transition-colors group-hover:text-white">
+                            Open Case Study ↗
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -168,16 +181,21 @@ export const Labs: React.FC = () => {
                 <div className="mt-6 text-center">
                   <div className="inline-flex items-center gap-1.5 font-display text-xl font-semibold tracking-[-0.01em] transition-colors duration-300 group-hover:text-[oklch(0.78_0.14_235)] md:text-2xl">
                     {app.name}
-                    <ArrowUpRight className="h-4 w-4 opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+                    <ArrowUpRight className="h-4 w-4 opacity-70 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </div>
                   <div className="mt-2 text-sm text-white/65 text-pretty md:text-[15px]">
                     {app.description}
                   </div>
-                  <div className="mt-3 font-mono text-[10px] uppercase tracking-[0.22em] text-white/40">
-                    {app.category}
+                  <div className="mt-3 flex items-center justify-center gap-2">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-white/40">
+                      {app.category}
+                    </span>
+                    <span className="font-mono text-[10px] text-court-glow opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                      · View Deep Dive →
+                    </span>
                   </div>
                 </div>
-              </a>
+              </div>
             </Reveal>
           ))}
         </div>

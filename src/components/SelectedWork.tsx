@@ -27,7 +27,7 @@ const projects: Project[] = [
     poster: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80',
     gradient: 'bg-gradient-to-br from-[oklch(0.55_0.16_240)] via-[oklch(0.40_0.14_245)] to-[oklch(0.22_0.09_252)]',
     deviceType: 'tablet',
-    link: '#',
+    link: 'https://ai.studio/apps/4eee7fba-09bd-4e84-ac24-e17b51a3776e?fullscreenApplet=true',
     stats: 'WebGL · 360° Fabric Shaders',
   },
   {
@@ -40,7 +40,7 @@ const projects: Project[] = [
     poster: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
     gradient: 'bg-gradient-to-br from-[oklch(0.58_0.15_160)] via-[oklch(0.42_0.13_170)] to-[oklch(0.20_0.08_250)]',
     deviceType: 'tablet',
-    link: 'https://github.com/sunny1256777-cloud',
+    link: 'https://github.com/sunny1256777-cloud/SIYA-CONSULTANCY-CRM',
     stats: 'Multi-Module · Offline-First',
   },
   {
@@ -53,7 +53,7 @@ const projects: Project[] = [
     poster: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1000&q=80',
     gradient: 'bg-gradient-to-br from-[oklch(0.60_0.16_236)] via-[oklch(0.40_0.15_244)] to-[oklch(0.20_0.08_252)]',
     deviceType: 'phone',
-    link: '#',
+    link: 'https://gov-connect-fc9d2537.base44.app',
     stats: 'Open Data · Citizen First',
   },
   {
@@ -66,7 +66,7 @@ const projects: Project[] = [
     poster: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
     gradient: 'bg-ink',
     deviceType: 'full',
-    link: 'https://github.com/sunny1256777-cloud',
+    link: 'https://ai.studio/apps/b429f882-d743-4311-8e4e-0c9f844c17ec',
     stats: 'LLM Orchestration · Auto PRD',
   },
 ];
