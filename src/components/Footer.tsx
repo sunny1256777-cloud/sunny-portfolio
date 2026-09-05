@@ -71,6 +71,15 @@ export const Footer: React.FC = () => {
                 </a>
                 <span className="text-white/40">·</span>
                 <a
+                  href="https://www.linkedin.com/in/tsunny07"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="text-white hover:opacity-80 transition-opacity underline decoration-white/30 underline-offset-4"
+                >
+                  LinkedIn
+                </a>
+                <span className="text-white/40">·</span>
+                <a
                   href="https://instagram.com/sparclo.media"
                   target="_blank"
                   rel="noreferrer noopener"
