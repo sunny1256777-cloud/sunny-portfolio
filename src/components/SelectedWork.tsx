@@ -27,7 +27,7 @@ const projects: Project[] = [
     poster: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80',
     gradient: 'bg-gradient-to-br from-[oklch(0.55_0.16_240)] via-[oklch(0.40_0.14_245)] to-[oklch(0.22_0.09_252)]',
     deviceType: 'tablet',
-    link: 'https://ai.studio/apps/4eee7fba-09bd-4e84-ac24-e17b51a3776e?fullscreenApplet=true',
+    link: 'https://ai.studio/apps/6322a514-0759-46f6-b563-d576e0222fa6?fullscreenApplet=true',
     stats: 'WebGL · 360° Fabric Shaders',
   },
   {

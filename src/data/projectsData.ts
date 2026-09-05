@@ -84,7 +84,7 @@ export const projectsData: Record<string, ProjectDetail> = {
     ],
     nextProjectId: 'consultancy-crm',
     nextProjectTitle: 'AI-Powered Offline Consultancy CRM',
-    externalLink: 'https://ai.studio/apps/4eee7fba-09bd-4e84-ac24-e17b51a3776e?fullscreenApplet=true',
+    externalLink: 'https://ai.studio/apps/6322a514-0759-46f6-b563-d576e0222fa6?fullscreenApplet=true',
     externalLinkLabel: 'Launch Live 3D Store',
   },
 
@@ -628,7 +628,7 @@ export const projectsData: Record<string, ProjectDetail> = {
     ],
     nextProjectId: 'namrata-textiles',
     nextProjectTitle: 'Namrata Textiles — Luxury 3D E-Commerce',
-    externalLink: 'https://ai.studio/apps/4eee7fba-09bd-4e84-ac24-e17b51a3776e?fullscreenApplet=true',
+    externalLink: 'https://ai.studio/apps/6322a514-0759-46f6-b563-d576e0222fa6?fullscreenApplet=true',
     externalLinkLabel: 'Launch Interactive 3D Demo',
   },
 };

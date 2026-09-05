@@ -69,7 +69,7 @@ const apps: LabApp[] = [
     name: 'Procedural WebGL Shaders',
     description: 'Real-time 3D interactive materials, fabric normal map manipulation, and 360° product inspection for luxury goods.',
     category: 'WebGL, 3D Graphics · 2025',
-    link: 'https://ai.studio/apps/4eee7fba-09bd-4e84-ac24-e17b51a3776e?fullscreenApplet=true',
+    link: 'https://ai.studio/apps/6322a514-0759-46f6-b563-d576e0222fa6?fullscreenApplet=true',
     icon: <Boxes className="size-6 text-cyan-400" />,
     color: 'from-cyan-600/30 to-blue-900/40',
     tag: 'Interactive 360°',
