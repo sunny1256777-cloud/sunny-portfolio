@@ -82,7 +82,10 @@ export const About: React.FC = () => {
                 </a>
 
                 <a
-                  href="mailto:sunny1256777@gmail.com?subject=Resume%20Request%20-%20Sunny%20Sah"
+                  href="/Sunny_Sah_Resume.pdf"
+                  download="Sunny_Sah_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-transform hover:scale-[1.02] active:scale-[0.98]"
                 >
                   <Download className="size-4" />
