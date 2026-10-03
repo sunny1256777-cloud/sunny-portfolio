@@ -84,7 +84,7 @@ export const projectsData: Record<string, ProjectDetail> = {
     ],
     nextProjectId: 'consultancy-crm',
     nextProjectTitle: 'AI-Powered Offline Consultancy CRM',
-    externalLink: 'https://ai.studio/apps/6322a514-0759-46f6-b563-d576e0222fa6?fullscreenApplet=true',
+    externalLink: 'https://namrata-textiles.vercel.app',
     externalLinkLabel: 'Launch Live 3D Store',
   },
 
@@ -628,7 +628,7 @@ export const projectsData: Record<string, ProjectDetail> = {
     ],
     nextProjectId: 'namrata-textiles',
     nextProjectTitle: 'Namrata Textiles — Luxury 3D E-Commerce',
-    externalLink: 'https://ai.studio/apps/6322a514-0759-46f6-b563-d576e0222fa6?fullscreenApplet=true',
+    externalLink: 'https://namrata-textiles.vercel.app',
     externalLinkLabel: 'Launch Interactive 3D Demo',
   },
 };

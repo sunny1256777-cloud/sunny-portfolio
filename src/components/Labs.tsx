@@ -75,7 +75,7 @@ const apps: LabApp[] = [
     name: 'Procedural WebGL Shaders',
     description: 'Real-time 3D interactive materials, fabric normal map manipulation, and 360° product inspection for luxury goods.',
     category: 'WebGL, 3D Graphics · 2025',
-    link: 'https://ai.studio/apps/6322a514-0759-46f6-b563-d576e0222fa6?fullscreenApplet=true',
+    link: 'https://namrata-textiles.vercel.app',
     icon: <Boxes className="size-4 text-cyan-400" />,
     color: 'from-cyan-600/30 to-blue-900/40',
     image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=85',
