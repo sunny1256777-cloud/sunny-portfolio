@@ -626,9 +626,69 @@ export const projectsData: Record<string, ProjectDetail> = {
         description: 'Demonstrated how high-performance creative coding can elevate standard product catalogs into unforgettable sensory interactions.',
       },
     ],
-    nextProjectId: 'namrata-textiles',
-    nextProjectTitle: 'Namrata Textiles — Luxury 3D E-Commerce',
+    nextProjectId: 'yt-frame-extractor',
+    nextProjectTitle: 'YouTube Frame Extractor — Chrome Extension',
     externalLink: 'https://namrata-textiles.vercel.app',
     externalLinkLabel: 'Launch Interactive 3D Demo',
+  },
+
+  'yt-frame-extractor': {
+    id: 'yt-frame-extractor',
+    title: 'YouTube Frame Extractor — Chrome Extension',
+    subtitle: 'High-performance browser extension extracting 1 FPS video frames to downloadable ZIP bundles at 30× real-time speed using HTML5 Canvas & MSE seek synchronization.',
+    client: 'Open Source Tooling · Browser Extension',
+    year: '2026',
+    discipline: 'Chrome Extension · Video Engineering',
+    tags: 'Browser Extension · Media API',
+    gradient: 'bg-gradient-to-br from-[oklch(0.55_0.22_25)] via-[oklch(0.38_0.18_20)] to-[oklch(0.18_0.08_250)]',
+    poster: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1400&q=80',
+    metrics: [
+      { value: '30×', label: 'Real-Time Capture Acceleration' },
+      { value: '1 FPS', label: 'Frame-Accurate Synchronization' },
+      { value: '100% Offline', label: 'Local-Only Processing & ZIP Bundling' },
+    ],
+    role: 'Extension Architect & Core Developer',
+    scope: ['Manifest V3 Extension', 'HTML5 Media Source Scrubbing', 'Canvas GPU Acceleration', 'JSZip Client Bundling'],
+    contributions: [
+      'Engineered a deterministic seek synchronization pipeline that eliminates video frame callback stalls on paused videos.',
+      'Constructed an in-page floating glassmorphic overlay for instant single-click execution directly within YouTube.',
+      'Implemented zero-recompression ZIP packaging with STORE mode, accelerating 60-frame archive generation to under 150ms.',
+      'Designed an intuitive Manifest V3 popup interface featuring dynamic frame-count estimation and custom range slicing.',
+    ],
+    chapters: [
+      {
+        number: '01',
+        title: 'The Challenge: Frame-Accurate Web Video Scrubbing',
+        description: 'Computer vision researchers, video editors, and AI creators frequently need clean image sequences from YouTube videos. Traditional approaches required screen recording, python scripts with yt-dlp/ffmpeg, or slow online downloaders plagued by rate limits and ads. We set out to engineer a zero-friction, client-side Chrome extension that extracts exact 1 FPS frames directly from the active YouTube HTML5 player tab.',
+      },
+      {
+        number: '02',
+        title: 'Overcoming Chrome Compositor Bottlenecks on Paused Video',
+        description: 'Standard requestVideoFrameCallback implementations hang when media is paused because Chrome halts compositor presentation ticks. We replaced this with a custom HTML5 seeked event listener paired with a 12ms micro-delay for GPU texture commit.',
+        points: [
+          {
+            title: 'Deterministic Seek Synchronization',
+            desc: 'Guarantees reliable, uncorrupted frame captures whether the video is actively playing or paused.',
+          },
+          {
+            title: 'Blazing Fast 20ms Frame Cycles',
+            desc: 'Achieves capture throughput of up to 40 frames per second on buffered media, processing a 1-minute video in just 2.5 seconds.',
+          },
+          {
+            title: 'Memory-Safe Direct Ingestion',
+            desc: 'Streams canvas image blobs directly into JSZip folders, preventing memory leaks and browser tab crashes on long videos.',
+          },
+        ],
+      },
+      {
+        number: '03',
+        title: 'Single-Click User Experience',
+        description: 'The extension introduces an unobtrusive in-page floating pill with a live progress bar, temporary auto-muting to silence rapid scrub audio, and instant ZIP download upon completion.',
+      },
+    ],
+    nextProjectId: 'namrata-textiles',
+    nextProjectTitle: 'Namrata Textiles — Luxury 3D E-Commerce',
+    externalLink: 'https://github.com/sunny1256777-cloud/yt-frame-extractor',
+    externalLinkLabel: 'Explore on GitHub',
   },
 };

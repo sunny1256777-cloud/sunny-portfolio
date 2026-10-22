@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Sparkles, Database, Globe, Cpu } from 'lucide-react';
+import { ArrowUpRight, Sparkles, Database, Globe, Cpu, Video } from 'lucide-react';
 import { Reveal } from './Reveal';
 
 interface Project {
@@ -17,6 +17,19 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: 'yt-frame-extractor',
+    title: 'YouTube Frame Extractor — Chrome Extension',
+    description: 'High-performance Manifest V3 Chrome extension that breaks YouTube videos into 1-FPS frames and bundles them into instant ZIP archives at 30× real-time speed.',
+    tags: 'Browser Extension · Media API',
+    year: '2026',
+    icon: <Video className="size-4 text-red-500" />,
+    poster: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1200&q=80',
+    gradient: 'bg-gradient-to-br from-[oklch(0.55_0.22_25)] via-[oklch(0.38_0.18_20)] to-[oklch(0.18_0.08_250)]',
+    deviceType: 'tablet',
+    link: 'https://github.com/sunny1256777-cloud/yt-frame-extractor',
+    stats: '30× Speed · 1-Click ZIP',
+  },
   {
     id: 'namrata-textiles',
     title: 'Namrata Textiles — Immersive 3D E-Commerce',

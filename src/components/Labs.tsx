@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { ArrowUpRight, ChevronLeft, ChevronRight, Bot, Users, Heart, Briefcase, Mail, Boxes } from 'lucide-react';
+import { ArrowUpRight, ChevronLeft, ChevronRight, Bot, Users, Heart, Briefcase, Mail, Boxes, Video } from 'lucide-react';
 import { Reveal } from './Reveal';
 
 interface LabApp {
@@ -15,6 +15,17 @@ interface LabApp {
 }
 
 const apps: LabApp[] = [
+  {
+    id: 'yt-frame-extractor',
+    name: 'YouTube Frame Extractor',
+    description: 'High-speed Manifest V3 extension extracting 1 FPS video frames to ZIP archives at 30× real-time speed.',
+    category: 'Browser Extension · 2026',
+    link: 'https://github.com/sunny1256777-cloud/yt-frame-extractor',
+    icon: <Video className="size-4 text-rose-500" />,
+    color: 'from-rose-600/30 to-red-950/40',
+    image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=85',
+    tag: 'Chrome Extension · 30× Fast',
+  },
   {
     id: 'sparclo-agents',
     name: 'Sparclo Multi-Agent Pipeline',
