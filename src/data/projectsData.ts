@@ -686,9 +686,69 @@ export const projectsData: Record<string, ProjectDetail> = {
         description: 'The extension introduces an unobtrusive in-page floating pill with a live progress bar, temporary auto-muting to silence rapid scrub audio, and instant ZIP download upon completion.',
       },
     ],
+    nextProjectId: 'noslop-ai-blocker',
+    nextProjectTitle: 'NoSlop — YouTube AI Content & Slop Blocker',
+    externalLink: 'https://github.com/sunny1256777-cloud/yt-frame-extractor',
+    externalLinkLabel: 'Explore on GitHub',
+  },
+
+  'noslop-ai-blocker': {
+    id: 'noslop-ai-blocker',
+    title: 'NoSlop — YouTube AI Content & Slop Blocker',
+    subtitle: 'High-performance Manifest V3 browser extension actively eliminating synthetic AI slop, deepfakes, AI voiceovers, and auto-generated spam from YouTube feeds and search with zero frame drops.',
+    client: 'Open Source Tooling · Browser Extension',
+    year: '2026',
+    discipline: 'Chrome Extension · Real-Time DOM',
+    tags: 'Browser Extension · AI & Content Filter',
+    gradient: 'bg-gradient-to-br from-red-600 via-rose-700 to-slate-900',
+    poster: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1400&q=80',
+    metrics: [
+      { value: '60 FPS', label: 'Zero-Lag MutationObserver Engine' },
+      { value: '100%', label: 'Client-Side Real-Time DOM Filtering' },
+      { value: 'Official', label: 'YouTube Synthetic Disclosure Integration' },
+    ],
+    role: 'Extension Architect & Core Developer',
+    scope: ['Manifest V3 Architecture', 'DOM MutationObserver Engine', 'Regex Boundary Parser', 'Chrome Storage Sync'],
+    contributions: [
+      'Engineered a throttled MutationObserver with requestAnimationFrame debouncing, ensuring YouTube home feed scrolls at fluid 60 FPS.',
+      'Implemented smart word-boundary regex matching to block AI buzzwords (#ai, #sora, ElevenLabs, deepfakes) without false positives on normal words.',
+      'Built an automated detector for YouTube’s official Altered and Synthetic content disclosure metadata badges.',
+      'Crafted a modern dark-mode popup interface with dynamic keyword chips, custom channel blocklists, and live counter analytics.',
+    ],
+    chapters: [
+      {
+        number: '01',
+        title: 'The AI Slop Epidemic on Video Feeds',
+        description: 'With the explosion of generative video tools (Sora, Kling, Midjourney, ElevenLabs), video platforms are flooded with low-effort faceless AI shorts, synthetic voiceover documentaries, and fake AI music covers. Audiences find their feeds overwhelmed by robotic content. We engineered NoSlop to restore human-curated authenticity to YouTube.',
+      },
+      {
+        number: '02',
+        title: 'Zero-Lag DOM Filtering at Scale',
+        description: 'YouTube is a complex Single Page Application (SPA) loading dozens of dynamic custom web components simultaneously. Naive DOM listeners trigger massive reflow loops and stuttering. We designed a non-blocking observation pipeline.',
+        points: [
+          {
+            title: 'RAF Throttling & WeakSet Tracking',
+            desc: 'Debounces inspection cycles with window.requestAnimationFrame and tags processed containers to prevent redundant CPU cycles.',
+          },
+          {
+            title: 'Boundary-Safe Regex Engine',
+            desc: 'Guarantees that words like container, captain, and trailer never trigger false positive blocks while catching all AI hashtags and phrases.',
+          },
+          {
+            title: 'YouTube Disclosure Badge Parsing',
+            desc: 'Directly reads YouTube internal aria-labels and metadata tags indicating altered and synthetic media.',
+          },
+        ],
+      },
+      {
+        number: '03',
+        title: 'Complete User Agency',
+        description: 'Users maintain 100% control through custom keywords, channel blocklists, live blocked counters, and instant toggle between Complete Hide and Blur modes.',
+      },
+    ],
     nextProjectId: 'namrata-textiles',
     nextProjectTitle: 'Namrata Textiles — Luxury 3D E-Commerce',
-    externalLink: 'https://github.com/sunny1256777-cloud/yt-frame-extractor',
+    externalLink: 'https://github.com/sunny1256777-cloud/youtube-ai-slop-blocker',
     externalLinkLabel: 'Explore on GitHub',
   },
 };

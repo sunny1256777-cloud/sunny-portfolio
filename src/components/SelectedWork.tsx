@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Sparkles, Database, Globe, Cpu, Video } from 'lucide-react';
+import { ArrowUpRight, Sparkles, Database, Globe, Cpu, Video, ShieldCheck } from 'lucide-react';
 import { Reveal } from './Reveal';
 
 interface Project {
@@ -17,6 +17,19 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: 'noslop-ai-blocker',
+    title: 'NoSlop — YouTube AI Slop Blocker',
+    description: 'Manifest V3 Chrome extension actively scanning YouTube DOM to eradicate synthetic AI slop, deepfakes, AI voiceovers, and auto-generated content with zero feed stutter.',
+    tags: 'Browser Extension · AI & Content Filter',
+    year: '2026',
+    icon: <ShieldCheck className="size-4 text-rose-500" />,
+    poster: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
+    gradient: 'bg-gradient-to-br from-red-600 via-rose-700 to-slate-900',
+    deviceType: 'tablet',
+    link: 'https://github.com/sunny1256777-cloud/youtube-ai-slop-blocker',
+    stats: '60 FPS · Zero AI Slop',
+  },
   {
     id: 'yt-frame-extractor',
     title: 'YouTube Frame Extractor — Chrome Extension',
