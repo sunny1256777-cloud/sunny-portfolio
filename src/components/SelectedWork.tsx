@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Sparkles, Database, Globe, Cpu, Video, ShieldCheck } from 'lucide-react';
+import { ArrowUpRight, Sparkles, Database, Globe, Cpu, Video, ShieldCheck, Radio } from 'lucide-react';
 import { Reveal } from './Reveal';
 
 interface Project {
@@ -17,6 +17,19 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: 'yt-live-simulator',
+    title: 'YouTube Live Simulator — Anti-Procrastination Engine',
+    description: 'Behavioral Chrome extension converting long recorded YouTube lectures into authentic real-time live broadcasts with wall-clock lock, live latency tracking, and zero forward skipping.',
+    tags: 'Browser Extension · Focus & Productivity',
+    year: '2026',
+    icon: <Radio className="size-4 text-red-500" />,
+    poster: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
+    gradient: 'bg-gradient-to-br from-red-700 via-rose-800 to-zinc-950',
+    deviceType: 'tablet',
+    link: 'https://github.com/sunny1256777-cloud/yt-live-simulator',
+    stats: 'Wall-Clock Sync · Zero Procrastination',
+  },
   {
     id: 'noslop-ai-blocker',
     title: 'NoSlop — YouTube AI Slop Blocker',

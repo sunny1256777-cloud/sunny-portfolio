@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { ArrowUpRight, ChevronLeft, ChevronRight, Bot, Users, Heart, Briefcase, Mail, Boxes, Video } from 'lucide-react';
+import { ArrowUpRight, ChevronLeft, ChevronRight, Bot, Users, Heart, Briefcase, Mail, Boxes, Video, Radio } from 'lucide-react';
 import { Reveal } from './Reveal';
 
 interface LabApp {
@@ -15,6 +15,17 @@ interface LabApp {
 }
 
 const apps: LabApp[] = [
+  {
+    id: 'yt-live-simulator',
+    name: 'YouTube Live Simulator',
+    description: 'Wall-clock synchronized simulated live stream engine turning 8-hour recorded YouTube lectures into real-time broadcasts.',
+    category: 'Browser Extension · 2026',
+    link: 'https://github.com/sunny1256777-cloud/yt-live-simulator',
+    icon: <Radio className="size-4 text-red-500" />,
+    color: 'from-red-600/30 to-rose-950/40',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=85',
+    tag: 'Chrome Extension · Live Engine',
+  },
   {
     id: 'yt-frame-extractor',
     name: 'YouTube Frame Extractor',

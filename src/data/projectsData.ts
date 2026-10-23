@@ -746,9 +746,69 @@ export const projectsData: Record<string, ProjectDetail> = {
         description: 'Users maintain 100% control through custom keywords, channel blocklists, live blocked counters, and instant toggle between Complete Hide and Blur modes.',
       },
     ],
+    nextProjectId: 'yt-live-simulator',
+    nextProjectTitle: 'YouTube Live Simulator — Anti-Procrastination Engine',
+    externalLink: 'https://github.com/sunny1256777-cloud/youtube-ai-slop-blocker',
+    externalLinkLabel: 'Explore on GitHub',
+  },
+
+  'yt-live-simulator': {
+    id: 'yt-live-simulator',
+    title: 'YouTube Live Simulator — Anti-Procrastination Lecture Engine',
+    subtitle: 'Behavioral commitment browser extension transforming long recorded YouTube lectures into authentic real-time live broadcasts with wall-clock DVR lock & live latency tracking.',
+    client: 'Open Source Tooling · Browser Extension',
+    year: '2026',
+    discipline: 'Chrome Extension · Behavioral UX',
+    tags: 'Browser Extension · Focus & Productivity',
+    gradient: 'bg-gradient-to-br from-red-700 via-rose-800 to-zinc-950',
+    poster: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80',
+    metrics: [
+      { value: '100% Real-Time', label: 'Wall-Clock Broadcast Synchronization' },
+      { value: 'Zero Skip', label: 'Future Seek Anti-Cheat Locking' },
+      { value: '1:1 Parity', label: 'Authentic YouTube Live Player Controls' },
+    ],
+    role: 'Extension Architect & Core Developer',
+    scope: ['Manifest V3 Extension', 'HTML5 Media Controller', 'YouTube DOM Injection', 'Wall-Clock DVR State Engine'],
+    contributions: [
+      'Engineered a deterministic wall-clock state synchronization engine in chrome.storage.local resilient to browser closures and reboots.',
+      'Constructed a 1:1 authentic YouTube Live control bar interface with dynamic Live latency badges and DVR scrubber tracking.',
+      'Developed an anti-cheat buffer boundary parser preventing forward skipping beyond the simulated live head.',
+      'Crafted a high-density Manifest V3 popup interface for instant one-click session activation and active session monitoring.',
+    ],
+    chapters: [
+      {
+        number: '01',
+        title: 'The Psychological Trap of Recorded Video',
+        description: 'Self-learners frequently suffer from procrastination when tackling 8-hour recorded video lectures because recorded video creates an illusion of infinite time. Without temporal scarcity, pausing becomes frictionless and a single lecture drags across 4 days. In contrast, genuine live broadcasts impose natural social synchronicity and temporal urgency, driving students to finish on time. We built YouTube Live Simulator to bridge this gap.',
+      },
+      {
+        number: '02',
+        title: 'Wall-Clock DVR Synchronization & Buffer Locking',
+        description: 'Rather than using a fragile in-memory timer, we bind playback strictly to the system wall-clock (Date.now() - startTime). If a user begins an 8-hour lecture at 2:00 PM and closes the browser, reopening at 2:45 PM strictly anchors the live head at exactly 45:00.',
+        points: [
+          {
+            title: 'Authentic Live Control Transformation',
+            desc: 'Replaces recorded time markers (e.g. 2:49 / 44:38) with an authentic red-dot Live badge and custom DVR timeline spanning from 0 to the current broadcast head.',
+          },
+          {
+            title: 'Dynamic Behind-Live Latency Indicator',
+            desc: 'When lagging behind, the dot shifts to grey and prominently displays the exact latency (e.g. -02:15 Behind Live), triggering natural urgency to catch up.',
+          },
+          {
+            title: 'One-Click Catch-Up Synchronization',
+            desc: 'Clicking the Live badge immediately snaps playback to the live head, restoring the full solid-red timeline to the right edge.',
+          },
+        ],
+      },
+      {
+        number: '03',
+        title: 'Behavioral Efficacy & Study Velocity',
+        description: 'By eliminating the cognitive permission to pause without consequence, users complete complex multi-hour lectures in real time with significantly higher engagement and material retention.',
+      },
+    ],
     nextProjectId: 'namrata-textiles',
     nextProjectTitle: 'Namrata Textiles — Luxury 3D E-Commerce',
-    externalLink: 'https://github.com/sunny1256777-cloud/youtube-ai-slop-blocker',
+    externalLink: 'https://github.com/sunny1256777-cloud/yt-live-simulator',
     externalLinkLabel: 'Explore on GitHub',
   },
 };
