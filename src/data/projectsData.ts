@@ -6,6 +6,18 @@ export interface Chapter {
   highlight?: string;
 }
 
+export interface SubExtension {
+  id: string;
+  name: string;
+  tagline: string;
+  description: string;
+  githubUrl: string;
+  badge: string;
+  features: string[];
+  gradient?: string;
+  stats: string;
+}
+
 export interface ProjectDetail {
   id: string;
   title: string;
@@ -25,6 +37,7 @@ export interface ProjectDetail {
   nextProjectTitle: string;
   externalLink?: string;
   externalLinkLabel?: string;
+  extensions?: SubExtension[];
 }
 
 export const projectsData: Record<string, ProjectDetail> = {
@@ -626,8 +639,8 @@ export const projectsData: Record<string, ProjectDetail> = {
         description: 'Demonstrated how high-performance creative coding can elevate standard product catalogs into unforgettable sensory interactions.',
       },
     ],
-    nextProjectId: 'yt-frame-extractor',
-    nextProjectTitle: 'YouTube Frame Extractor — Chrome Extension',
+    nextProjectId: 'youtube-extensions',
+    nextProjectTitle: 'YouTube Extensions — High-Performance Browser Tools',
     externalLink: 'https://namrata-textiles.vercel.app',
     externalLinkLabel: 'Launch Interactive 3D Demo',
   },
@@ -866,9 +879,136 @@ export const projectsData: Record<string, ProjectDetail> = {
         description: 'By eliminating playlist fragmentation and breaking giant lectures into digestible milestones, learners experience higher completion rates and dramatically reduced study friction.',
       },
     ],
-    nextProjectId: 'namrata-textiles',
-    nextProjectTitle: 'Namrata Textiles — Luxury 3D E-Commerce',
+    nextProjectId: 'youtube-extensions',
+    nextProjectTitle: 'YouTube Extensions — High-Performance Browser Tools',
     externalLink: 'https://github.com/sunny1256777-cloud/yt-playlist-fusion-splitter',
     externalLinkLabel: 'Explore on GitHub',
+  },
+
+  'youtube-extensions': {
+    id: 'youtube-extensions',
+    title: 'YouTube Extensions — High-Performance Browser Tools',
+    subtitle: 'A specialized suite of 4 Manifest V3 browser tools engineered to supercharge focus, automate media extraction, filter synthetic AI noise, and revolutionize playlist learning on YouTube.',
+    client: 'Open Source Suite · Chrome Web Store',
+    year: '2026',
+    discipline: 'Browser Extensions · Video & DOM Engineering',
+    tags: 'Chrome Extensions · Manifest V3 · Media APIs',
+    gradient: 'bg-gradient-to-br from-red-700 via-rose-900 to-slate-950',
+    poster: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1400&q=80',
+    metrics: [
+      { value: '4 Tools', label: 'Engineered Browser Extensions' },
+      { value: '0 Reload', label: 'Zero-Reload In-Memory Switching' },
+      { value: '30×', label: 'Real-Time Frame Capture Speed' },
+    ],
+    role: 'Creator & Lead Browser Systems Engineer',
+    scope: ['Manifest V3', 'Chrome Extension APIs', 'HTML5 Canvas & Media', 'DOM MutationObserver', 'YouTube Player API'],
+    contributions: [
+      'Architected 4 modular Manifest V3 extensions solving focused learning and media extraction problems on YouTube.',
+      'Engineered zero-reload in-memory playlist merging using YouTube main-world player API bindings.',
+      'Created an authentic wall-clock live broadcast simulation engine to prevent video lecture procrastination.',
+      'Built 60 FPS real-time DOM mutation observers eliminating AI slop, deepfakes, and synthetic noise.',
+      'Implemented high-speed HTML5 Canvas frame snapshotting extracting HD frames at 30× speed to instant ZIPs.',
+    ],
+    extensions: [
+      {
+        id: 'yt-playlist-fusion-splitter',
+        name: 'YouTube Playlist Fusion & Slicer',
+        tagline: 'Playlist Merger & Chapter Topic Slicer',
+        description: 'Stitches multi-video playlists into one continuous stream with a unified multi-video timeline and zero-reload video switching. Slices 10-hour mega lectures into topic-by-topic mini videos with countdown timer and completion guards.',
+        githubUrl: 'https://github.com/sunny1256777-cloud/yt-playlist-fusion-splitter',
+        badge: 'v1.2 · Zero Reload',
+        features: [
+          'Unified multi-video timeline scrubbing across full playlists',
+          'Zero-reload in-memory stream transitions without browser refreshes',
+          '10-hour lecture topic slicer with isolated drawer',
+          'Auto-pause topic completion guards and celebration alerts',
+        ],
+        gradient: 'bg-indigo-600',
+        stats: 'Continuous Playback · Slicer',
+      },
+      {
+        id: 'yt-live-simulator',
+        name: 'YouTube Live Broadcast Simulator',
+        tagline: 'Real-Time Lecture Focus & Anti-Procrastination Engine',
+        description: 'Locks long recorded YouTube video lectures to real-world wall-clock time, strictly disallowing forward seeking while tracking exact live latency (e.g. "• -04:12 behind live") like an authentic live stream broadcast.',
+        githubUrl: 'https://github.com/sunny1256777-cloud/yt-live-simulator',
+        badge: 'v1.3 · Focus Engine',
+        features: [
+          'Wall-clock UTC synchronization preventing video rushing',
+          'Forward seek lock & anti-skipping barrier',
+          'Live latency tracking badge (• -MM:SS behind live)',
+          'Catch up to Live one-click jump button in player controls',
+        ],
+        gradient: 'bg-red-600',
+        stats: 'Wall-Clock Sync · Zero Skips',
+      },
+      {
+        id: 'noslop-ai-blocker',
+        name: 'NoSlop — YouTube AI Slop Blocker',
+        tagline: 'Real-Time Feed Cleanser for AI Noise & Synthetic Slop',
+        description: 'Monitors the YouTube DOM via high-efficiency MutationObserver to detect and instantly eradicate AI-generated slop, synthetic voices, deepfake channels, and spammy farm content before it reaches your eyes.',
+        githubUrl: 'https://github.com/sunny1256777-cloud/youtube-ai-slop-blocker',
+        badge: 'v1.1 · AI Cleanse',
+        features: [
+          'High-speed DOM MutationObserver scanner running at 60 FPS',
+          'Synthetic channel & voiceover pattern filtering',
+          'Zero layout shifts or stuttering on infinite scroll',
+          'Configurable strictness and keyword filters in popup UI',
+        ],
+        gradient: 'bg-rose-600',
+        stats: '60 FPS · Zero AI Slop',
+      },
+      {
+        id: 'yt-frame-extractor',
+        name: 'YouTube HD Frame Extractor',
+        tagline: 'High-Speed 1-FPS Video Frame to ZIP Downloader',
+        description: 'Extracts crystal-clear high-definition video frames from any YouTube video at 1 FPS, running at 30× real-time playback speed and bundling everything into an instant ZIP download directly in browser memory.',
+        githubUrl: 'https://github.com/sunny1256777-cloud/yt-frame-extractor',
+        badge: 'v1.2 · 30× Speed',
+        features: [
+          '30× accelerated frame capture pipeline',
+          'Native HTML5 Canvas frame snapshotting directly from stream',
+          'Instant in-memory JSZip packaging with zero server uploads',
+          'Selectable frame-rate and resolution exports',
+        ],
+        gradient: 'bg-amber-600',
+        stats: '30× Real-Time · 1-Click ZIP',
+      },
+    ],
+    chapters: [
+      {
+        number: '01',
+        title: 'The Vision: Turning YouTube Into a Frictionless Learning Platform',
+        description: 'YouTube is the world’s largest knowledge repository, yet studying on it comes with severe friction: fragmented playlists, clickbait AI spam, overwhelming 10-hour video durations, and constant temptation to skip forward. Rather than building a separate video platform, we built lightweight client-side extensions that alter the YouTube DOM directly to enhance focus and productivity.',
+      },
+      {
+        number: '02',
+        title: 'Architectural Philosophy: Manifest V3 & Client-Side Media Engineering',
+        description: 'Every extension in this suite is built strictly on modern Manifest V3 standards with zero external telemetry or server dependencies. All computations—whether frame extraction, DOM mutation observation, or playlist timeline computation—execute locally inside browser memory at zero latency.',
+        points: [
+          {
+            title: 'Zero-Reload Player Bridge',
+            desc: 'Injected main-world scripts invoke YouTube internal player APIs (loadVideoById, nextVideo) directly, achieving seamless transitions without page reloads.',
+          },
+          {
+            title: '60 FPS Mutation Observers',
+            desc: 'Batched DOM mutation listeners filter out synthetic spam and feed distractions with zero perceptible layout shifts or scroll jank.',
+          },
+          {
+            title: 'Memory-Safe Canvas Processing',
+            desc: 'Leveraged native canvas drawImage and JSZip client-side compression to export thousands of frames without exceeding browser memory limits.',
+          },
+        ],
+      },
+      {
+        number: '03',
+        title: 'Modularity & User Impact',
+        description: 'By treating each extension as an independent, focused micro-tool rather than a bloated monolithic add-on, users can install only what they need: focus seekers install Live Simulator, serious students install Fusion & Slicer, researchers install Frame Extractor, and everyday viewers install NoSlop.',
+      },
+    ],
+    nextProjectId: 'namrata-textiles',
+    nextProjectTitle: 'Namrata Textiles — Luxury 3D E-Commerce',
+    externalLink: 'https://github.com/sunny1256777-cloud',
+    externalLinkLabel: 'Explore All Repositories on GitHub',
   },
 };

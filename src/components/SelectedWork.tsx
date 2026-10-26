@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Sparkles, Database, Globe, Cpu, Video, ShieldCheck, Radio, Scissors } from 'lucide-react';
+import { ArrowUpRight, Sparkles, Database, Globe, Cpu, Boxes } from 'lucide-react';
 import { Reveal } from './Reveal';
 
 interface Project {
@@ -18,56 +18,17 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: 'yt-playlist-fusion-splitter',
-    title: 'YouTube Fusion & Slicer — Playlist Merger & Chapter Splitter',
-    description: 'Manifest V3 extension stitching multi-part playlists into single continuous streams while slicing monolithic 10-hour lectures into isolated topic mini-videos with zero downloads.',
-    tags: 'Browser Extension · Video Engineering',
+    id: 'youtube-extensions',
+    title: 'YouTube Extensions — High-Performance Browser Tools',
+    description: 'A specialized suite of 4 Manifest V3 browser tools engineered for YouTube: Playlist Fusion & Lecture Slicer, Real-Time Live Simulator, AI Slop Blocker, and 30× HD Frame Extractor.',
+    tags: 'Browser Extensions · Suite',
     year: '2026',
-    icon: <Scissors className="size-4 text-indigo-400" />,
-    poster: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80',
-    gradient: 'bg-gradient-to-br from-indigo-700 via-sky-800 to-slate-950',
-    deviceType: 'tablet',
-    link: 'https://github.com/sunny1256777-cloud/yt-playlist-fusion-splitter',
-    stats: 'Playlist Fusion · 10-Hr Slicer',
-  },
-  {
-    id: 'yt-live-simulator',
-    title: 'YouTube Live Simulator — Anti-Procrastination Engine',
-    description: 'Behavioral Chrome extension converting long recorded YouTube lectures into authentic real-time live broadcasts with wall-clock lock, live latency tracking, and zero forward skipping.',
-    tags: 'Browser Extension · Focus & Productivity',
-    year: '2026',
-    icon: <Radio className="size-4 text-red-500" />,
-    poster: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
-    gradient: 'bg-gradient-to-br from-red-700 via-rose-800 to-zinc-950',
-    deviceType: 'tablet',
-    link: 'https://github.com/sunny1256777-cloud/yt-live-simulator',
-    stats: 'Wall-Clock Sync · Zero Procrastination',
-  },
-  {
-    id: 'noslop-ai-blocker',
-    title: 'NoSlop — YouTube AI Slop Blocker',
-    description: 'Manifest V3 Chrome extension actively scanning YouTube DOM to eradicate synthetic AI slop, deepfakes, AI voiceovers, and auto-generated content with zero feed stutter.',
-    tags: 'Browser Extension · AI & Content Filter',
-    year: '2026',
-    icon: <ShieldCheck className="size-4 text-rose-500" />,
-    poster: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
-    gradient: 'bg-gradient-to-br from-red-600 via-rose-700 to-slate-900',
-    deviceType: 'tablet',
-    link: 'https://github.com/sunny1256777-cloud/youtube-ai-slop-blocker',
-    stats: '60 FPS · Zero AI Slop',
-  },
-  {
-    id: 'yt-frame-extractor',
-    title: 'YouTube Frame Extractor — Chrome Extension',
-    description: 'High-performance Manifest V3 Chrome extension that breaks YouTube videos into 1-FPS frames and bundles them into instant ZIP archives at 30× real-time speed.',
-    tags: 'Browser Extension · Media API',
-    year: '2026',
-    icon: <Video className="size-4 text-red-500" />,
+    icon: <Boxes className="size-4 text-red-500" />,
     poster: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1200&q=80',
-    gradient: 'bg-gradient-to-br from-[oklch(0.55_0.22_25)] via-[oklch(0.38_0.18_20)] to-[oklch(0.18_0.08_250)]',
+    gradient: 'bg-gradient-to-br from-red-700 via-rose-900 to-slate-950',
     deviceType: 'tablet',
-    link: 'https://github.com/sunny1256777-cloud/yt-frame-extractor',
-    stats: '30× Speed · 1-Click ZIP',
+    link: 'https://github.com/sunny1256777-cloud',
+    stats: '4 Tools · Manifest V3',
   },
   {
     id: 'namrata-textiles',

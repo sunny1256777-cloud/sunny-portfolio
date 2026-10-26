@@ -264,6 +264,95 @@ export const CaseStudyView: React.FC<CaseStudyViewProps> = ({
         </div>
       </section>
 
+      {/* Extensions Suite Showcase (If project has multiple sub-extensions) */}
+      {project.extensions && project.extensions.length > 0 && (
+        <section className="border-t border-border/60 bg-secondary/10 py-16 md:py-24">
+          <div className="mx-auto w-full max-w-[1400px] px-6 md:px-10">
+            <Reveal>
+              <div className="mb-12 max-w-[800px]">
+                <div className="mb-3 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-accent">
+                  <span className="inline-block h-px w-6 bg-accent" />
+                  Tool Collection
+                </div>
+                <h2 className="font-display text-3xl font-semibold tracking-[-0.02em] md:text-5xl text-foreground">
+                  The Extension Suite
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+                  Explore each browser extension in this collection. Every tool is open-source, built on Manifest V3, and engineered to solve a specific problem on YouTube.
+                </p>
+              </div>
+            </Reveal>
+
+            {/* 2x2 Responsive Grid */}
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              {project.extensions.map((ext, idx) => (
+                <Reveal key={ext.id} delay={idx * 0.1}>
+                  <div className="group relative flex h-full flex-col justify-between overflow-hidden rounded-3xl border border-border/80 bg-card p-7 md:p-9 shadow-sm transition-all duration-300 hover:border-accent/50 hover:shadow-xl">
+                    <div>
+                      {/* Top Header Badge & Number */}
+                      <div className="flex items-center justify-between gap-4">
+                        <span className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-secondary/60 px-3.5 py-1 text-xs font-medium text-foreground/80">
+                          <span className="size-1.5 rounded-full bg-accent animate-pulse" />
+                          {ext.badge}
+                        </span>
+                        <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+                          0{idx + 1}
+                        </span>
+                      </div>
+
+                      {/* Title & Tagline */}
+                      <h3 className="mt-5 font-display text-2xl font-semibold text-foreground md:text-3xl">
+                        {ext.name}
+                      </h3>
+                      <p className="mt-1 font-mono text-xs text-accent">
+                        {ext.tagline}
+                      </p>
+
+                      <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-[15px]">
+                        {ext.description}
+                      </p>
+
+                      {/* Key Capabilities List */}
+                      {ext.features && (
+                        <div className="mt-6 border-t border-border/60 pt-5">
+                          <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                            Key Capabilities
+                          </div>
+                          <ul className="mt-3 space-y-2">
+                            {ext.features.map((feat, fIdx) => (
+                              <li key={fIdx} className="flex items-start gap-2.5 text-xs text-foreground/85 leading-relaxed">
+                                <span className="mt-1 size-1.5 shrink-0 rounded-full bg-accent" />
+                                <span>{feat}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Bottom Action Footer */}
+                    <div className="mt-8 flex items-center justify-between gap-4 border-t border-border/60 pt-5">
+                      <span className="font-mono text-xs text-muted-foreground">
+                        {ext.stats}
+                      </span>
+                      <a
+                        href={ext.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 rounded-full border border-border bg-foreground px-4 py-2 text-xs font-medium text-background transition-transform duration-200 hover:scale-105 active:scale-95 shadow-sm"
+                      >
+                        <span>View on GitHub</span>
+                        <ExternalLink className="size-3" />
+                      </a>
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Chapters (Deep Dive Breakdown) */}
       <section className="py-20 md:py-28">
         <div className="mx-auto w-full max-w-[1280px] px-6 md:px-10">

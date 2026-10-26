@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { ArrowUpRight, ChevronLeft, ChevronRight, Bot, Users, Heart, Briefcase, Mail, Boxes, Video, Radio, Scissors } from 'lucide-react';
+import { ArrowUpRight, ChevronLeft, ChevronRight, Bot, Users, Heart, Briefcase, Mail, Boxes } from 'lucide-react';
 import { Reveal } from './Reveal';
 
 interface LabApp {
@@ -16,37 +16,15 @@ interface LabApp {
 
 const apps: LabApp[] = [
   {
-    id: 'yt-playlist-fusion-splitter',
-    name: 'YouTube Fusion & Slicer',
-    description: 'Browser extension merging multi-part playlists into single continuous streams and slicing 10-hour lectures into isolated topic mini-videos.',
-    category: 'Browser Extension · 2026',
-    link: 'https://github.com/sunny1256777-cloud/yt-playlist-fusion-splitter',
-    icon: <Scissors className="size-4 text-indigo-400" />,
-    color: 'from-indigo-600/30 to-sky-950/40',
-    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=85',
-    tag: 'Fusion & Topic Slicer',
-  },
-  {
-    id: 'yt-live-simulator',
-    name: 'YouTube Live Simulator',
-    description: 'Wall-clock synchronized simulated live stream engine turning 8-hour recorded YouTube lectures into real-time broadcasts.',
-    category: 'Browser Extension · 2026',
-    link: 'https://github.com/sunny1256777-cloud/yt-live-simulator',
-    icon: <Radio className="size-4 text-red-500" />,
+    id: 'youtube-extensions',
+    name: 'YouTube Extensions',
+    description: 'Suite of 4 Manifest V3 browser tools: Playlist Fusion & Slicer, Live Simulator, AI Slop Blocker, and 30× Frame Extractor.',
+    category: 'Browser Extensions · 2026',
+    link: 'https://github.com/sunny1256777-cloud',
+    icon: <Boxes className="size-4 text-red-500" />,
     color: 'from-red-600/30 to-rose-950/40',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=85',
-    tag: 'Chrome Extension · Live Engine',
-  },
-  {
-    id: 'yt-frame-extractor',
-    name: 'YouTube Frame Extractor',
-    description: 'High-speed Manifest V3 extension extracting 1 FPS video frames to ZIP archives at 30× real-time speed.',
-    category: 'Browser Extension · 2026',
-    link: 'https://github.com/sunny1256777-cloud/yt-frame-extractor',
-    icon: <Video className="size-4 text-rose-500" />,
-    color: 'from-rose-600/30 to-red-950/40',
     image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=85',
-    tag: 'Chrome Extension · 30× Fast',
+    tag: '4 Tools · Manifest V3',
   },
   {
     id: 'sparclo-agents',
