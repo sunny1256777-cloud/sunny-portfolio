@@ -806,9 +806,69 @@ export const projectsData: Record<string, ProjectDetail> = {
         description: 'By eliminating the cognitive permission to pause without consequence, users complete complex multi-hour lectures in real time with significantly higher engagement and material retention.',
       },
     ],
+    nextProjectId: 'yt-playlist-fusion-splitter',
+    nextProjectTitle: 'YouTube Fusion & Slicer — Playlist Merger & Chapter Splitter',
+    externalLink: 'https://github.com/sunny1256777-cloud/yt-live-simulator',
+    externalLinkLabel: 'Explore on GitHub',
+  },
+
+  'yt-playlist-fusion-splitter': {
+    id: 'yt-playlist-fusion-splitter',
+    title: 'YouTube Fusion & Slicer — Playlist Merger & Chapter Splitter',
+    subtitle: 'High-performance browser extension merging multi-part playlists into unified continuous streams while slicing monolithic 10-hour lectures into isolated topic mini-videos.',
+    client: 'Open Source Tooling · Browser Extension',
+    year: '2026',
+    discipline: 'Chrome Extension · Video Engineering',
+    tags: 'Browser Extension · Study & Focus',
+    gradient: 'bg-gradient-to-br from-indigo-700 via-sky-800 to-slate-950',
+    poster: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1400&q=80',
+    metrics: [
+      { value: 'Zero Wait', label: 'Seamless Playlist Video Fusion' },
+      { value: '100% Client-Side', label: 'Zero Downloads & Zero Disk Space' },
+      { value: '10-Hr Split', label: 'Isolated Chapter & Topic Player' },
+    ],
+    role: 'Extension Architect & Core Developer',
+    scope: ['Manifest V3 Architecture', 'HTML5 Video Stream Concatenation', 'Timestamp & Chapter Parser', 'DOM Mutation Engine'],
+    contributions: [
+      'Engineered a virtual multi-video timeline synthesizing individual playlist items into a single continuous scrubber.',
+      'Constructed a deterministic chapter detection engine parsing native markers and description timestamps with 99.9% accuracy.',
+      'Built an isolated topic player interface that scales timeline bounds strictly to individual chapter durations.',
+      'Implemented an anti-burnout topic completion celebration guard preventing cognitive fatigue on marathon masterclasses.',
+    ],
+    chapters: [
+      {
+        number: '01',
+        title: 'The Dual Fatigue of Online Video Education',
+        description: 'Students face two frustrating extremes when learning on YouTube: fragmented 30-video playlists that constantly break focus with page loads, and monolithic 10-hour masterclasses that trigger cognitive fatigue. We built YouTube Fusion & Slicer to give learners complete control over video granularity.',
+      },
+      {
+        number: '02',
+        title: 'Virtual Stream Fusion & Global Playlist Scrubbing',
+        description: 'Rather than downloading gigabytes of video to stitch files offline, we constructed a virtual timeline in the DOM that tracks cumulative playlist offsets. Clicking anywhere across a 4-hour playlist instantly seeks to the exact video and timestamp without reloading.',
+        points: [
+          {
+            title: 'Unified Multi-Video Timeline',
+            desc: 'Overlays a continuous scrubber with subtle boundary markers indicating the start and end of every video in the playlist.',
+          },
+          {
+            title: 'Isolated Topic Slicing',
+            desc: 'Transforms 10-hour lectures into bite-sized 15-minute mini-videos, isolating player time to 00:00 - ChapterDuration.',
+          },
+          {
+            title: 'Auto-Pause Topic Completion Guard',
+            desc: 'Celebrates chapter completions and offers structured breaks before prompting continuation to the next topic.',
+          },
+        ],
+      },
+      {
+        number: '03',
+        title: 'Study Velocity & Material Retention',
+        description: 'By eliminating playlist fragmentation and breaking giant lectures into digestible milestones, learners experience higher completion rates and dramatically reduced study friction.',
+      },
+    ],
     nextProjectId: 'namrata-textiles',
     nextProjectTitle: 'Namrata Textiles — Luxury 3D E-Commerce',
-    externalLink: 'https://github.com/sunny1256777-cloud/yt-live-simulator',
+    externalLink: 'https://github.com/sunny1256777-cloud/yt-playlist-fusion-splitter',
     externalLinkLabel: 'Explore on GitHub',
   },
 };

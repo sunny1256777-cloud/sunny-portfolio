@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { ArrowUpRight, ChevronLeft, ChevronRight, Bot, Users, Heart, Briefcase, Mail, Boxes, Video, Radio } from 'lucide-react';
+import { ArrowUpRight, ChevronLeft, ChevronRight, Bot, Users, Heart, Briefcase, Mail, Boxes, Video, Radio, Scissors } from 'lucide-react';
 import { Reveal } from './Reveal';
 
 interface LabApp {
@@ -15,6 +15,17 @@ interface LabApp {
 }
 
 const apps: LabApp[] = [
+  {
+    id: 'yt-playlist-fusion-splitter',
+    name: 'YouTube Fusion & Slicer',
+    description: 'Browser extension merging multi-part playlists into single continuous streams and slicing 10-hour lectures into isolated topic mini-videos.',
+    category: 'Browser Extension · 2026',
+    link: 'https://github.com/sunny1256777-cloud/yt-playlist-fusion-splitter',
+    icon: <Scissors className="size-4 text-indigo-400" />,
+    color: 'from-indigo-600/30 to-sky-950/40',
+    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=85',
+    tag: 'Fusion & Topic Slicer',
+  },
   {
     id: 'yt-live-simulator',
     name: 'YouTube Live Simulator',

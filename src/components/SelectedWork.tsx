@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Sparkles, Database, Globe, Cpu, Video, ShieldCheck, Radio } from 'lucide-react';
+import { ArrowUpRight, Sparkles, Database, Globe, Cpu, Video, ShieldCheck, Radio, Scissors } from 'lucide-react';
 import { Reveal } from './Reveal';
 
 interface Project {
@@ -17,6 +17,19 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: 'yt-playlist-fusion-splitter',
+    title: 'YouTube Fusion & Slicer — Playlist Merger & Chapter Splitter',
+    description: 'Manifest V3 extension stitching multi-part playlists into single continuous streams while slicing monolithic 10-hour lectures into isolated topic mini-videos with zero downloads.',
+    tags: 'Browser Extension · Video Engineering',
+    year: '2026',
+    icon: <Scissors className="size-4 text-indigo-400" />,
+    poster: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80',
+    gradient: 'bg-gradient-to-br from-indigo-700 via-sky-800 to-slate-950',
+    deviceType: 'tablet',
+    link: 'https://github.com/sunny1256777-cloud/yt-playlist-fusion-splitter',
+    stats: 'Playlist Fusion · 10-Hr Slicer',
+  },
   {
     id: 'yt-live-simulator',
     title: 'YouTube Live Simulator — Anti-Procrastination Engine',
